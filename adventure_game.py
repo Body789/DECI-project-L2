@@ -9,7 +9,7 @@ play = "y"
 # Function for waiting before printing
 def print_pause(n):
     print(n)
-    time.sleep(2)
+    time.sleep(0)
 
 # Function for checking if input in game functions that require int is correct
 def get_int(message):
@@ -36,7 +36,7 @@ def easy():
         print_pause("Wrong answer! :(")
         score -= 1
         print_pause(f"Your score now is {score}.")
-        if score < 20:
+        if score < 20 and score > 0:
             print_pause(f"You can solve more {10 - turns} questions.")
 
 # Function for generating normal question
@@ -51,7 +51,7 @@ def normal():
         print_pause("Correct answer :)")
         score += 3
         print_pause(f"Your score now is {score}.")
-        if score < 20:
+        if score < 20 and score > 0:
             print_pause(f"You can solve more {10 - turns} questions.")
     else:
         print_pause("Wrong answer! :(")
@@ -77,7 +77,8 @@ def hard():
         print_pause("Wrong answer! :(")
         score -= 1
         print_pause(f"Your score now is {score}.")
-        print_pause(f"You can solve more {10 - turns} questions.")
+        if score < 20 and score > 0:
+            print_pause(f"You can solve more {10 - turns} questions.")
 
 # Function for operating the game
 def game():
