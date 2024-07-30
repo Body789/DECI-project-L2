@@ -82,8 +82,8 @@ def hard():
 # Function for operating the game
 def game():
     global play,score,turns
-    score = 0
-    turns = 10
+    score = 10
+    turns = 0
     print_pause("You are kidnapped by a mad Mathematecian.")
     print_pause("You should solve some math questions to go home.")
     print_pause("You are not supposed to use a calculator!")
