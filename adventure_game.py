@@ -9,7 +9,7 @@ play = "y"
 # Function for waiting before printing
 def print_pause(n):
     print(n)
-    time.sleep(0)
+    time.sleep(2)
 
 # Function for checking if input in game functions that require int is correct
 def get_int(message):
