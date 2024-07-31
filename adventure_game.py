@@ -2,6 +2,7 @@ import time
 import random
 
 # Main variables for scoring, number of turns and if user wants to play again
+# this code is only for testing branch
 score = 10
 turns = 0
 play = "y"
